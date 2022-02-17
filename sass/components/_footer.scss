@@ -1,0 +1,213 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.contacts-wrap {
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.footer__logo-icon {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
+}
+.footer__logo {
+  color: $color-primary-white;
+}
+
+.footer-contacts__link {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.6);
+  @include font();
+  font-style: normal;
+  @include transition(color);
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* .footer-contacts .link:last-child {
+  margin-bottom: 0;
+} */
+
+/* /* .footer-contacts .link:last-child {
+  margin-bottom: 0;
+/* } */
+/* (не розумію чому ці формули не працюють) */
+
+.footer-contacts__address {
+  color: $color-primary-white;
+
+  @include font();
+  @include transition(color);
+}
+
+.join {
+  font-family: Roboto;
+  @include font($fw: 700, $lh: 1.14);
+
+  text-transform: uppercase;
+
+  color: $color-primary-white;
+}
+
+.footer__join {
+  margin-bottom: 20px;
+}
+
+.footer__wrap {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
+  }
+}
+
+.footer__join-wrap {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-socials {
+  @include centered-flex();
+}
+
+.footer-socials__link {
+  @include centered-flex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+  @include transition(background-color);
+}
+
+.footer-socials__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-thumb {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+
+.subscribe-wrap {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.subscribe {
+  @include font($fw: 700, $lh: 1.14);
+
+  text-transform: uppercase;
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: 93px;
+  // }
+  margin-bottom: 20px;
+
+  color: $color-primary-white;
+}
+
+.subscribe__input {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  // margin-left: 93px;
+  padding-left: 16px;
+  background-color: transparent;
+  color: $color-primary-white;
+  @include transition(border-color);
+  outline: none;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    border-color: $color-accent;
+  }
+}
+
+.subscribe__button {
+  display: inline-flex;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: 0 auto;
+  }
+  padding: 10px 29px;
+  border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+
+  background-color: $color-accent;
+  color: $color-primary-white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+  @include transition(background-color);
+}
+
+.subscribe__input-wrap {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+}

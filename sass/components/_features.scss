@@ -1,0 +1,97 @@
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+
+  background-color: $color-primary-white;
+}
+
+.features-list {
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+
+  // display: flex;
+  // justify-content: space-between;
+}
+
+.features-list__item {
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+  }
+  // max-width: 270px;
+}
+
+.features__svg-thumb {
+  @include centered-flex(flex);
+  height: 120px;
+  // width: 270px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* .features-item.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+} */
+
+/* .features-item.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.features-item.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.features-item.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+} */
+
+/* .features-item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.features-item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.features-item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.features-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+} */
+
+.features__title {
+  color: $color-secondary-text;
+  text-transform: uppercase;
+  @include font($fw: 700, $lh: 1.71);
+  text-align: center;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+
+.features__description {
+  @include font();
+  color: $color-primary-text;
+}
